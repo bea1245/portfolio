@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Bowling Game</title>
+    <!--poppins font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <div class="start-game-popup">
+      <h1>Welcome to the bowling game!</h1>
+      <select id="choose-players" name="choose-players">
+        <option value="">Select number of players</option>
+        <option value="2">2 Players</option>
+        <option value="3">3 Players</option>
+        <option value="4">4 Players</option>
+      </select>
+      <p id="selectedPlayerText"></p>
+      <p id="errorMessage"></p>
+      <textarea
+        placeholder="Enter in player names..."
+        id="start-game-textarea"
+      ></textarea>
+      <button id="startGameBtn">Start Game</button>
+    </div>
+    
+    <div class="scoreboard hidden" id="scoreboard">
+      <div class="player" id="player1">
+        <h3 class="player-name">Mary</h3>
+        <p class="player-score">
+          Score <span id="player1-score" class="player-score">0</span>
+        </p>
+      </div>
+      <div class="player" id="player2">
+        <h3 class="player-name">Bea</h3>
+        <p class="player-score">
+          Score: <span id="player2-score" class="player-score">0</span>
+        </p>
+      </div>
+      <div class="player" id="player3">
+        <h3 class="player-name">John</h3>
+        <p class="player-score">
+          Score: <span id="player3-score" class="player-score">0</span>
+        </p>
+      </div>
+    </div>
+    <div id="winner-display" class="winner-display hidden">
+      🏆 Winner <span id="winner-name">TBD</span>
+    </div>
+    <div class="current-player hidden" id="current-player">
+      🎳 Current Player: <span id="current-player-name">Mary</span>
+    </div>
+    <div class="game-container hidden">
+      <div id="alley" class="use-bumpers">
+        <div class="gutter" id="gutter-left"></div>
+        <div class="gutter" id="gutter-right"></div>
+        <div class="row">
+          <div class="pin"></div>
+          <div class="pin"></div>
+          <div class="pin"></div>
+          <div class="pin"></div>
+        </div>
+        <div class="row">
+          <div class="pin"></div>
+          <div class="pin"></div>
+          <div class="pin"></div>
+        </div>
+        <div class="row">
+          <div class="pin"></div>
+          <div class="pin"></div>
+        </div>
+        <div class="row"><div class="pin"></div></div>
+
+        <div id="ball"></div>
+      </div>
+    </div>
+    <button id="toggleGutters" class="hidden">Toggle Gutters</button>
+    <div id="gameOverOverlay" class="hidden">
+      <div id="popup">
+        <h2 id="winnerText">Winner</h2>
+        <button id="restartBtn">Play Again</button>
+      </div>
+    </div>-->
+
+    <div class="start-game-popup">
+      <h1>Welcome to the bowling game!</h1>
+      <select id="choose-players">
+        <option value="">Select number of players</option>
+        <option value="2">2 Players</option>
+        <option value="3">3 Players</option>
+        <option value="4">4 Players</option>
+      </select>
+      <p id="selectedPlayerText"></p>
+      <p id="errorMessage"></p>
+      <textarea
+        id="start-game-textarea"
+        placeholder="Enter player names..."
+      ></textarea>
+
+      <button id="startGameBtn">Start Game</button>
+    </div>
+    <!-- <section id="hallOfFame">
+      <h2>🏆 Hall of Fame</h2>
+      <div class="hall-container">
+        <li>No scores yet...</li>
+      </div>
+    </section> -->
+    <div id="gameUI" class="hidden">
+      <div class="btn-row">
+        <button id="restart-btn">Restart Game</button>
+        <button id="toggleGutters">Toggle Gutters</button>
+      </div>
+      <section id="hallOfFame">
+        <h2>🏆 Hall of Fame</h2>
+        <div class="hall-container">
+          <li>No scores yet...</li>
+        </div>
+      </section>
+
+      <!-- <div class="wrapper">
+
+      </div> -->
+      <div class="scoreboard">
+        <div class="player" id="player1">
+          <h3 class="player-name">Mary</h3>
+          <p class="player-score">Score: <span id="player1-score">0</span></p>
+        </div>
+        <div class="player" id="player2">
+          <h3 class="player-name">Bea</h3>
+          <p class="player-score">Score: <span id="player2-score">0</span></p>
+        </div>
+        <div class="player" id="player3">
+          <h3 class="player-name">John</h3>
+          <p class="player-score">Score: <span id="player3-score">0</span></p>
+        </div>
+        <div class="player" id="player4">
+          <h3 class="player-name">Juanita</h3>
+          <p class="player-score">Score: <span id="player4-score"></span></p>
+        </div>
+      </div>
+
+      <div class="game-container">
+        <div id="alley" class="use-bumpers">
+          <div class="gutter" id="gutter-left"></div>
+          <div class="gutter" id="gutter-right"></div>
+          <div class="row">
+            <div class="pin"></div>
+            <div class="pin"></div>
+            <div class="pin"></div>
+            <div class="pin"></div>
+          </div>
+
+          <div class="row">
+            <div class="pin"></div>
+            <div class="pin"></div>
+            <div class="pin"></div>
+          </div>
+
+          <div class="row">
+            <div class="pin"></div>
+            <div class="pin"></div>
+          </div>
+
+          <div class="row">
+            <div class="pin"></div>
+          </div>
+
+          <div id="ball"></div>
+        </div>
+      </div>
+
+      <div id="winner-display" class="hidden">
+        🏆 Winner: <span id="winner-name">TBD</span>
+      </div>
+      <div id="gameOverOverlay" class="hidden">
+        <div id="popup">
+          <h2 id="winnerText"></h2>
+          <div id="winnerEmoji"></div>
+          <p class="winner-score">
+            <span id="winnerScore">0</span>
+          </p>
+          <button id="restartBtn">Play Again</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
