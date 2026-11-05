@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Audio Visualizer Project</title>
+    <!--font awesome here-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <div class="player">
+      <div class="header">
+        <h1>Audio Visualizer</h1>
+        <p id="statusText">Upload a song to start</p>
+      </div>
+      <div class="visualizer-frame">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="track-info">
+        <div class="now-playing">
+          <h3>Now Playing</h3>
+          <div id="currentSong">No song selected</div>
+        </div>
+        <div class="playlist">
+          <h3>Playlist</h3>
+          <ul id="songTitle"></ul>
+        </div>
+        <div id="songMeta">Ready</div>
+      </div>
+      <div class="track-progress">
+        <span id="currentTime"></span>
+        <label for="progressBar" id="current-time-label">Current Time</label>
+        <input type="range" id="progressBar" min="0" max="100" value="0" />
+        <span id="totalTime">0:00</span>
+      </div>
+      <div class="container">
+        <label for="audio" class="upload-label">Upload Audio</label>
+        <input type="file" accept="audio/*" id="audio" />
+        <div class="controls">
+          <i id="prevBtn" class="fa-solid fa-backward-step"></i>
+          <i id="playBtn" class="fa-solid fa-play"></i>
+          <i id="pauseBtn" class="fa-solid fa-pause"></i>
+          <i id="nextBtn" class="fa-solid fa-forward-step"></i>
+        </div>
+      </div>
+      <div class="extras">
+        <div class="volume-control">
+          <label for="volumeSlider">Volume</label>
+          <input type="range" id="volumeSlider" min="0" max="100" value="100" />
+        </div>
+      </div>
+    </div> -->
+    <section class="project">
+      <div class="project-left">
+        <div class="header">
+          <h1>Audio Visualizer</h1>
+          <p id="statusText">Upload a song to start</p>
+        </div>
+        <!--navbar goes here-->
+        <nav class="navbar">
+          <h2>New features coming soon</h2>
+          <ul class="nav-links">
+            <!-- <h2>New features coming soon</h2> -->
+            <li class="active">🏠 Home</li>
+            <li>🔎 Discover</li>
+            <li>🎵 Library</li>
+            <li>❤️ Favorites</li>
+            <li>⏱️ Recently Played</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="project-right">
+        <div class="search-container">
+          <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input
+            id="search-input"
+            placeholder="Search for song...(coming soon)"
+            type="text"
+            disabled
+
+          />
+          <div class="search-img">
+            <img src="person.jpg" />
+          </div>
+        </div>
+          <!-- <div class="now-playing">
+            <h3>Now Playing</h3>
+            <div id="currentSong">No song selected</div>
+          </div>
+          <div class="playlist">
+            <h3>Playlist</h3>
+            <ul id="songTitle"></ul>
+          </div>
+          <div class="track-progress">
+            <span id="currentTime"></span>
+            <label for="progressBar" id="current-time-label"
+              >Current Time</label
+            >
+            <input type="range" id="progressBar" min="0" max="100" value="0" />
+            <span id="totalTime">0:00</span>
+          </div>
+          <div class="container">
+            <label for="audio" class="upload-label">Upload Audio</label>
+            <input type="file" accept="audio/*" id="audio" />
+            <div class="controls">
+              <i id="prevBtn" class="fa-solid fa-backward-step"></i>
+              <i id="playBtn" class="fa-solid fa-play"></i>
+              <i id="pauseBtn" class="fa-solid fa-pause"></i>
+              <i id="nextBtn" class="fa-solid fa-forward-step"></i>
+            </div>
+        </div>
+        <div class="extras">
+          <div class="volume-control">
+            <label for="volumeSlider">Volume</label>
+            <input type="range" id="volumeSlider" min="0" max="100" value="100" />
+          </div>
+        </div>
+      </div> -->
+
+      <!--PRACTICE-->
+      
+      <!-- <div class="main-content">
+        <div class="container">
+          <div class="main-content-left">
+            <div class="now-playing">
+              <h2>Now Playing</h2>
+              <div id="currentSong">No song selected</div>
+              <img src="albumcover1.jpg" />
+            </div>
+          </div>
+          <div class="main-content-right">
+            <div class="playlist">
+              <h3>Playlist</h3>
+              <ul id="songTitle"></ul>
+            </div>
+            <div class="track-progress">
+              <span id="currentTime"></span>
+              <label for="progressBar" id="current-time-label"
+                >Current Time</label
+              >
+              <input type="range" id="progressBar" min="0" max="100" value="0" />
+              <span id="totalTime">0:00</span>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+    <section class="bottom-section">
+      <div class="container">
+        <label for="audio" class="upload-label">Upload Audio</label>
+            <input type="file" accept="audio/*" id="audio" />
+            <div class="controls">
+              <i id="prevBtn" class="fa-solid fa-backward-step"></i>
+              <i id="playBtn" class="fa-solid fa-play"></i>
+              <i id="pauseBtn" class="fa-solid fa-pause"></i>
+              <i id="nextBtn" class="fa-solid fa-forward-step"></i>
+      </div>
+    </section> -->
+
+    <div class="main-content">
+
+      <!-- TOP BOX -->
+      <div class="container">
+    
+        <div class="main-content-left">
+          <div class="now-playing">
+            <h2>Now Playing</h2>
+            <div id="currentSong">No song selected</div>
+            <img src="albumcover1.jpg" />
+          </div>
+        </div>
+    
+        <div class="main-content-right">
+    
+          <div class="playlist">
+            <h3>Playlist</h3>
+            <ul id="songTitle"></ul>
+          </div>
+    
+          <div class="track-progress">
+            <span id="currentTime"></span>
+
+            <!--practice-->
+            <div class="extras">
+              <div class="volume-control">
+                <label for="volumeSlider">Volume</label>
+                <input type="range" id="volumeSlider" min="0" max="100" value="100" />
+              </div>
+            </div>
+            
+            <label for="progressBar" id="current-time-label">Current Time</label>
+            <input type="range" id="progressBar" min="0" max="100" value="0" />
+            <span id="totalTime">0:00</span>
+          </div>
+          <label for="audio" class="upload-label">Upload Audio</label>
+          <input type="file" accept="audio/*" id="audio" /> 
+
+          
+    
+        </div>
+    
+      </div>
+    
+      <div class="visualizer-section">
+        <div class="visualizer-frame">
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+      <!-- NEW BOTTOM BOX -->
+      <div class="bottom-section">
+        <!-- Your bottom content goes here -->
+        <!-- <label for="audio" class="upload-label">Upload Audio</label>
+          <input type="file" accept="audio/*" id="audio" /> -->
+    
+          <div class="controls">
+            <i id="prevBtn" class="fa-solid fa-backward-step"></i>
+            <i id="playBtn" class="fa-solid fa-play"></i>
+            <i id="pauseBtn" class="fa-solid fa-pause"></i>
+            <i id="nextBtn" class="fa-solid fa-forward-step"></i>
+          </div>
+      </div>
+      
+    
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
