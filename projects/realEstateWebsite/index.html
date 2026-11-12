@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>My Version</title>
+    <!--font wesome icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--header-->
+    <!-- <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <h2 class="header-logo">Elite Homes</h2>
+          <nav class="nav">
+            <ul class="nav-links" id="navLinks">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#properties">Properties</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="get-started-btn">Get Started</button>
+          <div class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fa-solid fa-bars" id="openIcon"></i>
+          </div>
+          <div class="close-icon">
+            <i class="fa-solid fa-x" id="closeIcon"></i>
+          </div>
+        </div>
+      </div>
+    </header> -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <h2 class="header-logo">Elite Homes</h2>
+
+          <nav class="nav">
+            <ul class="nav-links" id="navLinks">
+              <!-- CLOSE ICON INSIDE MENU -->
+              <div class="close-icon" id="closeIcon">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+
+              <li><a href="#home">Home</a></li>
+              <li><a href="#properties">Properties</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <button class="get-started-btn">Get Started</button>
+
+          <div class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fa-solid fa-bars" id="openIcon"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="hero" id="home">
+      <div class="container">
+        <h1 class="hero-heading hero-fade-in">Find Your Dream Home</h1>
+        <p class="hero-text hero-fade-in">
+          Discover the perfect property with our expert real estate services
+        </p>
+        <div class="hero-buttons">
+          <button class="view-btn hero-fade-in">View Properties</button>
+          <button class="contact-agent-btn hero-fade-in">Contact Agent</button>
+        </div>
+      </div>
+    </div>
+    <!--all sections get a specific padding-->
+    <!--feautres section-->
+    <section class="features" id="services">
+      <div class="container">
+        <h2 class="section-title fade-in">Why Choose Elite Homes</h2>
+        <div class="features-grid">
+          <div class="feature-card fade-in">
+            <i class="fa-solid fa-magnifying-glass feature-icon"></i>
+            <h3>Advanced Search</h3>
+            <p>
+              Find your perfect home with our powerful search filters and
+              advanced matching algorithms
+            </p>
+          </div>
+          <div class="feature-card fade-in">
+            <i class="fa-solid fa-handshake feature-icon"></i>
+            <h3>Expert Guidance</h3>
+            <p>
+              Get professional advice from our experienced real estate agents
+              throughout your journey
+            </p>
+          </div>
+          <div class="feature-card fade-in">
+            <i class="fa-solid fa-money-bill feature-icon"></i>
+            <h3>Secure Transactions</h3>
+            <p>
+              All transactions are protected with our secure platform and legal
+              compliance guarantee
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--properties section-->
+    <section class="properties" id="properties">
+      <div class="container">
+        <h2 class="section-title fade-in">Featured Properties</h2>
+        <div class="properties-grid">
+          <div class="property-card fade-in">
+            <img src="images/home1.jpg" />
+            <p class="price">$850,000</p>
+            <div class="property-card-info">
+              <h3>Modern Family Villa</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Beverly Hills, CA</p>
+            </div>
+            <div class="property-card-bottom">
+              <span><i class="fa-solid fa-bed"></i> 4 beds</span>
+              <span><i class="fa-solid fa-bath"></i> 3 baths</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 2,500 sqft</span>
+            </div>
+          </div>
+          <div class="property-card fade-in">
+            <img src="images/home2.jpg" />
+            <p class="price">$850,000</p>
+            <div class="property-card-info">
+              <h3>Modern Family Villa</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Beverly Hills, CA</p>
+            </div>
+            <div class="property-card-bottom">
+              <span><i class="fa-solid fa-bed"></i> 4 beds</span>
+              <span><i class="fa-solid fa-bath"></i> 3 baths</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 2,500 sqft</span>
+            </div>
+          </div>
+          <div class="property-card fade-in">
+            <img src="images/home3.jpg" />
+            <p class="price">$850,000</p>
+            <div class="property-card-info">
+              <h3>Modern Family Villa</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Beverly Hills, CA</p>
+            </div>
+            <div class="property-card-bottom">
+              <span><i class="fa-solid fa-bed"></i> 4 beds</span>
+              <span><i class="fa-solid fa-bath"></i> 3 baths</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> 2,500 sqft</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--stats section-->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item fade-in fade-in-stat">
+            <h3 id="propertiesSold" class="updateNumber">0</h3>
+            <p>Properties Sold</p>
+          </div>
+          <div class="stat-item fade-in fade-in-stat">
+            <h3 id="happyClients" class="updateNumber">0</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat-item fade-in fade-in-stat">
+            <h3 id="yearsExperience" class="updateNumber">0</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item fade-in fade-in-stat">
+            <h3 id="awardsWon" class="updateNumber">0</h3>
+            <p>Awards Won</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--contact form-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title fade-in">Get In Touch</h2>
+        <form>
+          <!--left side-->
+          <div class="form-left fade-in">
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h3>Office</h3>
+                <p>123 Real Esate, Ave, City, State 12345</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>EliteHomes@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <!--right side-->
+          <div class="form-right fade-in">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us about your property needs..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--footer section-->
+    <footer id="about">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3>Elite Homes</h3>
+            <p>
+              Your trusted partner in finding the perfect home. We provide
+              exceptional real estate services with a focus on quality,
+              integrity and customer satisfaction
+            </p>
+            <div class="footer-links">
+              <a><i class="fa-brands fa-facebook"></i></a>
+              <a><i class="fa-brands fa-twitter"></i></a>
+              <a><i class="fa-brands fa-instagram"></i></a>
+              <a><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <p><a href="#home">Home</a></p>
+            <p><a href="#properties">Properties</a></p>
+            <p><a href="#services">Services</a></p>
+            <p><a href="#about">About</a></p>
+            <p><a href="#contact">Contact</a></p>
+          </div>
+          <div class="footer-section">
+            <h3>Services</h3>
+            <p><a href="#">Property Sales</a></p>
+            <p><a href="#">Property Rental</a></p>
+            <p><a href="#">Property Mangement</a></p>
+            <p><a href="#">Investment Advisory</a></p>
+            <p><a href="#">Market Analysis</a></p>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p><i class="fa-solid fa-phone"></i>+1 (555) 123-4567</p>
+            <p><i class="fa-solid fa-envelope"></i>EliteHomes@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i>123 Real Estate Ave</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Elite Homes. All rights reserved | Privacy Policy |
+            Terms of Service
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
